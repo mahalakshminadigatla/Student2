@@ -23,7 +23,7 @@ class Student2ApplicationTests {
 
 		@Test
 		public void addStudentTest(){
-		Student student = new Student("Maha", 22, 30000);
+		Student student = new Student(1,"Maha", 22, 30000);
 		studentService.addStudent(student);
 		verify(studentRepo,times(1)).save(student);
      }
