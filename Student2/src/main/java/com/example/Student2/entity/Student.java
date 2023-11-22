@@ -3,7 +3,7 @@ package com.example.Student2.entity;
 import org.springframework.data.annotation.Id;
 
 public class Student {
-    public Student(int studentId, String name, int age, int salary) {
+    public Student(Long studentId, String name, int age, int salary) {
         super();
         this.studentId = studentId;
         this.name = name;
@@ -35,11 +35,11 @@ public class Student {
         return salary;
     }
 
-    public int getStudentId() {
+    public Long getStudentId() {
         return studentId;
     }
 
-    public void setStudentId(int studentId) {
+    public void setStudentId(Long studentId) {
         this.studentId = studentId;
     }
 
@@ -48,7 +48,7 @@ public class Student {
     }
 
     @Id
-    private int studentId;
+    private Long studentId;
     private String name;
     private int age;
     private int salary;
