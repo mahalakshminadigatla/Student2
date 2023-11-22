@@ -16,9 +16,8 @@ public class StudentController {
 
 
     @PostMapping("/add")
-
     public String addStudent(@RequestBody Student student) {
         this.studentService.addStudent(student);
-        return "Student id added"+student.getName();
+        return "Student is added"+student.getName();
 }
 }

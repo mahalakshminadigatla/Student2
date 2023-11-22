@@ -8,6 +8,10 @@ public class Student {
         this.salary = salary;
     }
 
+    public Student() {
+
+    }
+
     public String getName() {
         return name;
     }
